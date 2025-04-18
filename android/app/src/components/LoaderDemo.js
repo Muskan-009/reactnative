@@ -16,7 +16,7 @@ const LoaderDemo = () => {
         setTimeout(() => {
             setLoading(false);
         }, 3000);
-    };  
+    };
 
     const handlePress1 = () => {
         setLoading1(true);
@@ -86,7 +86,7 @@ const LoaderDemo = () => {
     );
 };
 
-export default LoaderDemo;  
+export default LoaderDemo;
 
 const styles = StyleSheet.create({
     container: {
