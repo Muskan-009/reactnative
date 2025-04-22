@@ -9,7 +9,6 @@ const ToastDemoScreen = () => {
                 title="Show Android SHORT Toast"
                 onPress={() => ToastAndroid.show('Short Toast!', ToastAndroid.SHORT)}
             />
-
             <Button
                 title="Show Android LONG Toast"
                 color="orange"

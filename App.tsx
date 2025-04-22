@@ -93,6 +93,9 @@ import Toast from 'react-native-toast-message';
 import HomeScreen from './android/app/src/components/HomeScreen';
 import ToastDemoScreen from './android/app/src/components/ToastDemoScreen';
 import LoaderDemo from './android/app/src/components/LoaderDemo';
+import CardsScreen from './android/app/src/components/CardsScreen';
+import checkbox from './android/app/src/components/checkbox';
+import TextField from './android/app/src/components/TextField';
 // import CarouselExample from './android/app/src/components/carousal';
 
 const Stack = createNativeStackNavigator();
@@ -104,8 +107,10 @@ const App = () => {
         <Stack.Navigator initialRouteName="Home">
           <Stack.Screen name="Home" component={HomeScreen} />
           <Stack.Screen name="ToastDemo" component={ToastDemoScreen} />
-          <Stack.Screen name = "LoaderDemo" component={LoaderDemo}/>
-          {/* <Stack.Screen name = "CarouselExample" component={CarouselExample}/> */}
+          <Stack.Screen name="LoaderDemo" component={LoaderDemo} />
+          <Stack.Screen name="CardsScreen" component={CardsScreen} />
+          <Stack.Screen name="checkbox" component={checkbox} />
+          <Stack.Screen name="TextField" component={TextField} />
         </Stack.Navigator>
       </NavigationContainer>
       <Toast />

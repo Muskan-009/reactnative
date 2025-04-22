@@ -30,8 +30,6 @@ const LoaderDemo = () => {
         setTimeout(() => {
             setLoading2(false);
         }, 3000);
-
-
         Animated.loop(
             Animated.timing(rotateValue, {
                 toValue: 1,
@@ -56,8 +54,6 @@ const LoaderDemo = () => {
                     <Text style={{ marginTop: 10 }}>Loading...</Text>
                 </View>
             )}
-
-
             <Button title="Spinner" color="pink" onPress={handlePress1} />
             {loading1 && (
                 <View style={styles.loaderContainer}>
@@ -66,10 +62,9 @@ const LoaderDemo = () => {
                         textContent={'Loading...'}
                         textStyle={{ color: '#FFF' }}
                     />
+                    {/* <ActivityIndicator animating={true} color={MD2Colors.red800} /> */}
                 </View>
             )}
-
-
             <Button title="Image Icon loader" color="orange" onPress={handlePress2} />
             {loading2 && (
                 <View style={styles.loaderContainer}>
