@@ -30,7 +30,7 @@ const ToastDemoScreen = () => {
             <Button
                 title="Show Custom Error Toast"
                 color="red"
-                onPress={() =>
+                onPress={() =>  
                     Toast.show({
                         type: 'error',
                         text1: 'Error!',

@@ -96,10 +96,11 @@ import LoaderDemo from './android/app/src/components/LoaderDemo';
 import CardsScreen from './android/app/src/components/CardsScreen';
 import checkbox from './android/app/src/components/checkbox';
 import TextField from './android/app/src/components/TextField';
-// import CarouselExample from './android/app/src/components/carousal';
+import Apidatascreen from './android/app/src/components/Apidatascreen';
+import Alertdialogscreen from './android/app/src/components/Alertdialogscreen';
+
 
 const Stack = createNativeStackNavigator();
-
 const App = () => {
   return (
     <>
@@ -111,6 +112,8 @@ const App = () => {
           <Stack.Screen name="CardsScreen" component={CardsScreen} />
           <Stack.Screen name="checkbox" component={checkbox} />
           <Stack.Screen name="TextField" component={TextField} />
+          <Stack.Screen name="Apidatascreen" component={Apidatascreen} />
+          <Stack.Screen name="Alertdialogscreen" component={Alertdialogscreen} />
         </Stack.Navigator>
       </NavigationContainer>
       <Toast />
